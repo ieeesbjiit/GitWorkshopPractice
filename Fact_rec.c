@@ -1,9 +1,9 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-long int factorial(int);
+long int factorial(int);//function declaration
 
-int main()
+int main()//main function
 {
     int n=10;
     //long int result;
@@ -15,13 +15,13 @@ int main()
 return 0;
 }
 
-long int factorial(int n)
+long int factorial(int n)//function definition
 {
     long int result;
-    if(n==0)
+    if(n==0||n==1)
     result = 1;
     else
-    result = n*factorial(n-1);
+    result = n*factorial(n-1);//recursive function
     return result;
 
 }
